@@ -1,7 +1,7 @@
 export const SITE = {
-	title: 'Documentation',
-	description: 'Your website description.',
-	defaultLanguage: 'en_US',
+	title: 'Arroyo Erp',
+	description: 'Documentación de Arroyo ERP.',
+	defaultLanguage: 'es_ES',
 };
 
 export const OPEN_GRAPH = {
@@ -15,7 +15,7 @@ export const OPEN_GRAPH = {
 };
 
 export const KNOWN_LANGUAGES = {
-	English: 'en',
+	Spanish: 'es',
 };
 
 // Uncomment this to add an "Edit this page" button to every page of documentation.
@@ -33,14 +33,14 @@ export const KNOWN_LANGUAGES = {
 // }
 
 export const SIDEBAR = {
-	en: [
+	es: [
 		{ text: '', header: true },
 		{ text: 'Section Header', header: true },
-		{ text: 'Introduction', link: 'en/introduction' },
-		{ text: 'Page 2', link: 'en/page-2' },
-		{ text: 'Page 3', link: 'en/page-3' },
+		{ text: 'Introduction', link: 'es/introduction' },
+		{ text: 'Page 2', link: 'es/page-2' },
+		{ text: 'Page 3', link: 'es/page-3' },
 
 		{ text: 'Another Section', header: true },
-		{ text: 'Page 4', link: 'en/page-4' },
+		{ text: 'Page 4', link: 'es/page-4' },
 	],
 };

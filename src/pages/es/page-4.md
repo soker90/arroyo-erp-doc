@@ -19,7 +19,7 @@ Nam quam dolor, pellentesque sed odio euismod, feugiat tempus tellus. Quisque ar
 ```markdown
 ---
 title: Markdown Page!
-lang: en
+lang: es
 layout: ~/layouts/MainLayout.astro
 ---
 
