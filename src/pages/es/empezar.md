@@ -19,10 +19,17 @@ Al entrar en la web aparecerá el formulario de inicio de sesión, es necesario 
 
 En la primera pantalla, una vez iniciada la sesión, se mostrará un panel con información general de la aplicación.
 
+### Facturas pagadas en efectivo
 <img src="/assets/01-cash.png" alt="cash">
 
 Lo primero que se ve son unas tarjetas con información de los pagos en efectivo realizados a proveedores.
 
+### Recordatorios
 <img src="/assets/01-reminders.png" alt="reminders">
 
-Justo debajo se muestra una tabla con los recordatorios introducidos por el usuario. Para introduciar un recordatorio, solo hay que introducir el mensaje en el campo de texto y pulsar intro. Para eliminarlo hay que pulsar en el botón de la papelera a la derecha del mensaje y confirmar la eliminación.
+Justo debajo se muestra una tabla con los recordatorios introducidos por el usuario. Para introduciar un recordatorio, solo hay que introducir el mensaje en el campo de texto y pulsar intro. 
+
+#### Borrar recordatorio
+<img src="/assets/01-remove-reminder.png" alt="remove-reminder" >
+
+Para eliminarlo hay que pulsar en el botón de la papelera a la derecha del mensaje y confirmar la eliminación.
