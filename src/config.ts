@@ -38,7 +38,8 @@ export const SIDEBAR = {
 		{ text: 'Introducción', link: 'es/introduccion' },
 		{ text: 'Inicio', header: true },
 		{ text: 'Empezar', link: 'es/empezar' },
-		{ text: 'Proveedores', header: true },
+		{ text: 'Administración', header: true },
+		{text: 'Proveedores', link: 'es/proveedores'},
 		{ text: 'Page 2', link: 'es/page-2' },
 		{ text: 'Page 3', link: 'es/page-3' },
 
