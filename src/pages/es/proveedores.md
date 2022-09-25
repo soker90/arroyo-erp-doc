@@ -29,6 +29,12 @@ Al pulsar en `Mostrar información`, se muestra los datos del provedor y la fact
 Se pueden editar los datos del proveedor que aparecen en la tarjeta de **Datos de contacto**, pulsando en el icono del lápiz, en la ventana que aparece.
 
 ### Albaranes
+<img src="/assets/proveedores/albaranes.png" alt="albaranes">
+
+En la primera pestaña se muestran los albaranes, y el contenido de estos. Primero se muestran los albaranes que no están incluidos en ninguna facturas y al pulsar en `Mostrar en factura` se muestran también los que ya están en alguna factura.
+
+Se crear un **nuevo albarán** para el proveedor actual, pulsando en `Nuevo albarán`
+<img src="/assets/proveedores/ver-albaran.png" alt="albaran">
 
 ### Facturas
 
