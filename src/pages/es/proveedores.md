@@ -33,8 +33,11 @@ Se pueden editar los datos del proveedor que aparecen en la tarjeta de **Datos d
 
 En la primera pestaña se muestran los albaranes, y el contenido de estos. Primero se muestran los albaranes que no están incluidos en ninguna facturas y al pulsar en `Mostrar en factura` se muestran también los que ya están en alguna factura.
 
-Se crear un **nuevo albarán** para el proveedor actual, pulsando en `Nuevo albarán`
 <img src="/assets/proveedores/ver-albaran.png" alt="albaran" loading="lazy">
+
+Se puede crear un **nuevo albarán** para el proveedor actual, pulsando en `Nuevo albarán`. Lo primero que se introduce siempre es la fecha del albarán, una vez introducida ya se pueden añadir los productos.
+
+
 
 ### Facturas
 
