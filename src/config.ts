@@ -34,6 +34,7 @@ export const SIDEBAR = {
 		{ text: 'Facturación e informes', link: 'es/informes' },
 		{ text: 'Recordatorios', link: 'es/recordatorios' },
 		{ text: 'Preguntas frecuentes', link: 'es/faq' },
+		{ text: 'Capturas y anonimización', link: 'es/capturas' },
 		{ text: 'Administración técnica', header: true },
 		{ text: 'Instalación: visión general', link: 'es/instalacion' },
 		{ text: 'Requisitos y arquitectura', link: 'es/arquitectura' },
