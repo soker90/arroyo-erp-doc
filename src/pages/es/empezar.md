@@ -1,55 +1,71 @@
 ---
 title: Primeros pasos
-description: Acceso inicial y orientación para empezar a utilizar Arroyo ERP.
+description: Acceso inicial, navegación y comprobaciones básicas para empezar a utilizar Arroyo ERP.
 layout: ../../layouts/MainLayout.astro
 ---
 
 # Primeros pasos
 
-Esta guía explica cómo acceder a una instalación de Arroyo y reconocer los elementos iniciales. Los nombres y la disponibilidad de algunas opciones pueden variar según la versión desplegada.
+Esta guía te ayuda a entrar en Arroyo y orientarte en sus módulos. Los nombres de algunas opciones pueden variar entre versiones; si no ves una acción descrita, comprueba la versión instalada o consulta a quien la administra.
 
-## 1. Acceder a la aplicación
+## 1. Acceder
 
-Abre en el navegador la dirección web que te haya facilitado quien administra Arroyo. La aplicación muestra una pantalla de inicio de sesión.
+1. Abre en el navegador la dirección que te haya facilitado la persona administradora.
+2. En la pantalla **Login**, introduce las credenciales que te hayan proporcionado.
+3. Envía el formulario y espera a que cargue la aplicación.
 
-![Pantalla de inicio de sesión de Arroyo ERP](/assets/01-login.png)
+No hay que asumir que existe un registro público. Si no tienes cuenta o has perdido el acceso, contacta con la persona administradora. No compartas tu contraseña, cookies ni tokens.
 
-Introduce tu usuario y contraseña y envía el formulario. Si no tienes credenciales, solicítalas al administrador: el registro público de cuentas no debe darse por disponible, ya que en el backend actual la creación de usuarios no se ofrece como un flujo público normal.
+**[CAPTURA PENDIENTE — pantalla Login]**
 
-**[CAPTURA PENDIENTE — inicio de sesión actual]**
+- Mostrar los campos y el botón de acceso tal como aparecen en la versión actual.
+- No mostrar credenciales, direcciones privadas ni información del navegador que identifique a una persona.
 
-- **Qué mostrar:** formulario completo, incluyendo los nombres de los campos y el botón de acceso.
-- **Anonimización:** no mostrar contraseñas, correos personales, URL internas ni tokens.
-- **Formato recomendado:** PNG o WebP, resolución suficiente para leer los textos.
+## 2. Entender la navegación
 
-### Si no puedes iniciar sesión
+Tras iniciar sesión, la aplicación entra en el área de trabajo. En el código actual, la ruta inicial del área de aplicación redirige al informe de inicio. Las áreas principales identificadas en la interfaz son:
 
-1. Comprueba que la dirección corresponde a la instalación correcta.
-2. Verifica el usuario y la contraseña con el administrador.
-3. Comprueba si la aplicación muestra un mensaje de error.
-4. Si persiste, envía al administrador el texto del error y la hora aproximada. No envíes tu contraseña ni cookies de sesión.
+| Área | Para qué sirve |
+|---|---|
+| Informes | Panel inicial, informes de productos, facturación, albaranes y pagarés, y avisos de precios incorrectos |
+| Proveedores | Consultar proveedores y acceder a sus fichas, albaranes, gastos y facturas |
+| Clientes | Consultar clientes, productos de cliente y facturas de venta |
+| Pagos | Revisar y gestionar pagos pendientes |
+| Precios | Consultar cambios de precio |
+| Notas | Consultar y mantener notas |
+| Gastos | Acceder a la gestión de gastos y facturas asociadas |
 
-## 2. Reconocer el panel principal
+La disponibilidad y el contenido de cada pantalla dependen de la versión desplegada y de los datos existentes.
 
-Tras iniciar sesión se muestra el panel principal. En él se agrupa información de resumen y una zona de recordatorios.
+**[CAPTURA PENDIENTE — navegación completa]**
 
-![Panel principal de Arroyo ERP](/assets/01-dashboard.png)
+Mostrar el menú que aparece en la instalación actual. Sustituir nombres, importes, indicadores y datos de actividad por valores sintéticos.
 
-**[CAPTURA PENDIENTE — panel principal actual]**
+## 3. Flujo recomendado para empezar
 
-- **Qué mostrar:** navegación, tarjetas de resumen y zona de recordatorios.
-- **Anonimización:** sustituir nombres de clientes/proveedores, importes reales y cualquier dato de actividad por datos ficticios.
-- **Comprobación:** confirmar que las tarjetas siguen apareciendo en esta versión.
+1. Familiarízate con el panel de inicio antes de modificar datos.
+2. Abre un cliente o proveedor existente y reconoce su ficha.
+3. Consulta productos y precios antes de registrar documentos.
+4. Si vas a crear un albarán o una factura, comprueba primero el tercero, la fecha, las líneas y los importes.
+5. Después de guardar, vuelve a abrir el documento y confirma que los cambios se han guardado correctamente.
 
-## 3. Navegar por los módulos
+Para practicar, utiliza un entorno de pruebas y datos ficticios. No crees facturas ni confirmes pagos reales para aprender a usar la interfaz.
 
-Utiliza la navegación de la aplicación para abrir el módulo correspondiente. Entre los módulos identificados en el código se encuentran clientes, proveedores, productos, albaranes, facturas, pagos e informes. No todas las instalaciones tienen necesariamente los mismos permisos o datos.
+## 4. Si algo no funciona
 
-## 4. Recomendaciones para empezar
+- **No puedes entrar:** confirma que usas la dirección y la cuenta correctas con la persona administradora.
+- **La pantalla queda cargando o no muestra datos:** anota la hora, la pantalla y los pasos que has seguido; consulta [Diagnóstico de problemas](./diagnostico).
+- **No encuentras una opción:** revisa si estás en el módulo correcto y si la versión de tu instalación coincide con la documentación.
+- **Los importes no coinciden:** no corrijas datos directamente. Comprueba los documentos relacionados y solicita ayuda antes de confirmar operaciones.
 
-1. Pide al administrador que confirme qué datos puedes consultar y modificar.
-2. Familiarízate primero con registros de prueba.
-3. Antes de borrar o confirmar documentos, revisa el mensaje de confirmación y el efecto de la operación.
-4. No utilices datos reales en una instalación de pruebas sin una política de protección y borrado definida.
+## 5. Antes de guardar o confirmar
 
-Siguiente paso: [Panel principal](./panel).
+Comprueba siempre:
+
+- Tercero correcto (cliente o proveedor).
+- Fecha y número del documento.
+- Líneas, cantidades, precios y totales.
+- Documentos asociados y pagos relacionados.
+- Estado final que muestra la aplicación.
+
+**[CAPTURA PENDIENTE — ejemplo de revisión antes de guardar]** Usar un documento ficticio y mostrar dónde se revisan los datos sin incluir información real.
