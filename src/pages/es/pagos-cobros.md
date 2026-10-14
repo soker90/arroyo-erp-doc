@@ -1,37 +1,56 @@
 ---
 title: Pagos y cobros
-description: Consulta de pagos y su relación con facturas.
+description: Revisar pagos pendientes, confirmar, combinar o dividir pagos con precaución.
 layout: ../../layouts/MainLayout.astro
 ---
 # Pagos y cobros
 
-Arroyo dispone de un módulo de pagos y operaciones para consultar, combinar o dividir pagos. El flujo exacto depende del documento y de la versión instalada.
+La pantalla **Pagos** presenta una tabla de pagos y acciones para confirmar, combinar o dividir determinados registros. La disponibilidad de una acción depende de la selección y del estado del pago.
 
-## Consultar un pago
+## Consultar pagos
 
-Abre la sección de pagos desde la navegación o desde el documento relacionado. Comprueba tercero, fecha, importe y estado antes de modificar nada.
+1. Abre **Pagos** desde la navegación.
+2. Localiza el registro que necesitas revisar.
+3. Comprueba el tercero, la fecha, el importe y los documentos relacionados antes de actuar.
 
-**[CAPTURA PENDIENTE — listado de pagos]**
-Usar datos sintéticos; no mostrar cuentas bancarias, referencias reales ni identificadores fiscales.
+**[CAPTURA PENDIENTE — pantalla Pagos]**
 
-## Registrar o aplicar un pago
+Mostrar las acciones y columnas reales; no incluir cuentas bancarias, referencias de pago ni identificadores personales.
 
-Cuando la interfaz ofrezca una acción para registrar o aplicar un pago:
+## Confirmar un pago
 
-1. Identifica el documento al que corresponde.
-2. Comprueba el tercero y el importe pendiente.
-3. Introduce los datos solicitados.
-4. Revisa el resumen antes de confirmar.
-5. Vuelve al documento y comprueba que el resultado es el esperado.
+1. Selecciona el pago correcto.
+2. Utiliza la acción de confirmación disponible en la fila.
+3. Lee el cuadro de confirmación y comprueba los datos mostrados.
+4. Confirma solo si el pago corresponde al documento y al importe esperados.
+5. Vuelve a revisar el registro para comprobar el resultado.
 
-**[CAPTURA PENDIENTE — formulario real de pago o aplicación a factura]**
+**[CAPTURA PENDIENTE — confirmación de pago]**
 
-## Combinar o dividir pagos
+La confirmación puede afectar al estado y a la facturación asociada. No la uses como prueba en datos reales.
 
-El backend expone operaciones de combinación y división. Antes de utilizarlas, revisa qué registros se seleccionan y qué importes resultarán. Prueba primero con registros de prueba y conserva la referencia de los documentos originales.
+## Combinar pagos
 
-**[CAPTURA PENDIENTE — acción de combinar/dividir, si aparece en la interfaz]**
+La interfaz incluye una acción para combinar los pagos seleccionados. Antes de usarla, comprueba que todos pertenecen al conjunto correcto y que entiendes qué registros quedarán agrupados. No selecciones pagos solo porque tengan importes parecidos.
 
-## Incidencias
+**[CAPTURA PENDIENTE — selección y acción de combinar pagos]**
 
-Si el importe pendiente no coincide, comprueba si existen pagos parciales, documentos duplicados o facturas que no estén en el estado esperado. No corrijas datos directamente en la base de datos sin un procedimiento de recuperación.
+## Dividir un pago
+
+La interfaz también ofrece una operación de división para determinados pagos. Revisa los importes resultantes y los registros que generará el proceso antes de guardar. Si no puedes explicar cómo cuadran los importes resultantes con el original, cancela y pide ayuda.
+
+**[CAPTURA PENDIENTE — formulario real de división]**
+
+## Exportar
+
+El módulo incluye una opción de exportación. Comprueba el archivo generado, su periodo y su contenido antes de compartirlo. Las exportaciones pueden contener datos financieros sensibles y deben guardarse en una ubicación autorizada.
+
+## Resolver diferencias
+
+Si el importe pendiente no coincide con lo esperado:
+
+1. Revisa la factura y sus documentos relacionados.
+2. Comprueba si existen pagos parciales o agrupados.
+3. Verifica el estado de cada registro.
+4. Guarda el mensaje de error sin incluir secretos ni datos personales.
+5. Pide ayuda antes de editar directamente la base de datos.
