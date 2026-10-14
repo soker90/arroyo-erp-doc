@@ -1,35 +1,55 @@
 ---
-title: Empezando
-description: Descripción de la página de inicio de sesión
+title: Primeros pasos
+description: Acceso inicial y orientación para empezar a utilizar Arroyo ERP.
 layout: ../../layouts/MainLayout.astro
 ---
 
-## Inicio de sesión
+# Primeros pasos
 
-<img src="/assets/01-login.png" alt="login">
+Esta guía explica cómo acceder a una instalación de Arroyo y reconocer los elementos iniciales. Los nombres y la disponibilidad de algunas opciones pueden variar según la versión desplegada.
 
-Para iniciar sesión se necesita un usuario y una contraseña. El endpoint para crear un nuevo usuario está deshabilitado por defecto y sería necesario habilitarlo.
+## 1. Acceder a la aplicación
 
-Al entrar en la web aparecerá el formulario de inicio de sesión, es necesario rellenarlo para poder acceder a la aplicación.
+Abre en el navegador la dirección web que te haya facilitado quien administra Arroyo. La aplicación muestra una pantalla de inicio de sesión.
 
+![Pantalla de inicio de sesión de Arroyo ERP](/assets/01-login.png)
 
-## Panel principal
+Introduce tu usuario y contraseña y envía el formulario. Si no tienes credenciales, solicítalas al administrador: el registro público de cuentas no debe darse por disponible, ya que en el backend actual la creación de usuarios no se ofrece como un flujo público normal.
 
-<img src="/assets/01-dashboard.png" alt="dashboard">
+**[CAPTURA PENDIENTE — inicio de sesión actual]**
 
-En la primera pantalla, una vez iniciada la sesión, se mostrará un panel con información general de la aplicación.
+- **Qué mostrar:** formulario completo, incluyendo los nombres de los campos y el botón de acceso.
+- **Anonimización:** no mostrar contraseñas, correos personales, URL internas ni tokens.
+- **Formato recomendado:** PNG o WebP, resolución suficiente para leer los textos.
 
-### Facturas pagadas en efectivo
-<img src="/assets/01-cash.png" alt="cash">
+### Si no puedes iniciar sesión
 
-Lo primero que se ve son unas tarjetas con información de los pagos en efectivo realizados a proveedores.
+1. Comprueba que la dirección corresponde a la instalación correcta.
+2. Verifica el usuario y la contraseña con el administrador.
+3. Comprueba si la aplicación muestra un mensaje de error.
+4. Si persiste, envía al administrador el texto del error y la hora aproximada. No envíes tu contraseña ni cookies de sesión.
 
-### Recordatorios
-<img src="/assets/01-reminders.png" alt="reminders">
+## 2. Reconocer el panel principal
 
-Justo debajo se muestra una tabla con los recordatorios introducidos por el usuario. Para introduciar un recordatorio, solo hay que introducir el mensaje en el campo de texto y pulsar intro. 
+Tras iniciar sesión se muestra el panel principal. En él se agrupa información de resumen y una zona de recordatorios.
 
-#### Borrar recordatorio
-<img src="/assets/01-remove-reminder.png" alt="remove-reminder" >
+![Panel principal de Arroyo ERP](/assets/01-dashboard.png)
 
-Para eliminarlo hay que pulsar en el botón de la papelera a la derecha del mensaje y confirmar la eliminación.
+**[CAPTURA PENDIENTE — panel principal actual]**
+
+- **Qué mostrar:** navegación, tarjetas de resumen y zona de recordatorios.
+- **Anonimización:** sustituir nombres de clientes/proveedores, importes reales y cualquier dato de actividad por datos ficticios.
+- **Comprobación:** confirmar que las tarjetas siguen apareciendo en esta versión.
+
+## 3. Navegar por los módulos
+
+Utiliza la navegación de la aplicación para abrir el módulo correspondiente. Entre los módulos identificados en el código se encuentran clientes, proveedores, productos, albaranes, facturas, pagos e informes. No todas las instalaciones tienen necesariamente los mismos permisos o datos.
+
+## 4. Recomendaciones para empezar
+
+1. Pide al administrador que confirme qué datos puedes consultar y modificar.
+2. Familiarízate primero con registros de prueba.
+3. Antes de borrar o confirmar documentos, revisa el mensaje de confirmación y el efecto de la operación.
+4. No utilices datos reales en una instalación de pruebas sin una política de protección y borrado definida.
+
+Siguiente paso: [Panel principal](./panel).
