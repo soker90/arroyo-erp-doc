@@ -18,6 +18,9 @@ No hay una especificación Swagger/OpenAPI exhaustiva mantenida en el repositori
 ## Convenciones y autenticación
 
 - Salvo el inicio de sesión, las rutas enumeradas aquí incluyen el middleware de autenticación de la API.
+- El middleware espera la cabecera HTTP `Authorization: Bearer <token>`. El token se emite en la cabecera de respuesta `Token` al iniciar sesión y también puede renovarse en respuestas de rutas autenticadas.
+- `GET /account/me` responde sin contenido cuando el token se acepta; no es una ruta de diagnóstico de MongoDB.
+- La creación de cuentas (`POST /account/createAccount`) está protegida por autenticación. El procedimiento para crear la primera cuenta debe resolverse antes del despliegue y no debe suponerse que existe un alta pública.
 - Los métodos y rutas se muestran tal como se declaran en los módulos de rutas. La URL pública completa puede depender de cómo se publique o proxifique el servidor.
 - `:id`, `:index`, `:deliveryOrder` y otros segmentos con dos puntos son parámetros de ruta, no texto literal.
 - Los cuerpos JSON, parámetros de consulta, códigos de error y reglas de negocio deben comprobarse en el controlador y validador correspondientes antes de integrar un cliente externo.
