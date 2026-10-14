@@ -1,5 +1,5 @@
 ---
-title: Instalación: visión general
+title: "Instalación: visión general"
 description: Componentes, decisiones previas y rutas para instalar Arroyo ERP.
 layout: ../../layouts/MainLayout.astro
 ---
